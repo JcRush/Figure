@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AddImgActivity">
+
+    <!--https://blog.csdn.net/weixin_42605933/article/details/82731216-->
+
+    <TextView
+        android:id="@+id/tvLog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="请选择一张替换面部照片"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/personmodel" />
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/btu_select"
+        android:text="图库"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:text="下一步"
+        android:enabled="false"
+        android:textSize="16dp"
+        android:textColor="#752268"/>
+</LinearLayout>

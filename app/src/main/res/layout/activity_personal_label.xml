@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".PersonDesign">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="选择属于你的性格标签（最多五个）"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.donkingliang.labels.LabelsView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:labelBackground="@drawable/label_bg"
+        app:labelTextColor="@drawable/label_text_color"
+        app:labelTextSize="20sp"
+        app:labelTextPaddingBottom="10dp"
+        app:labelTextPaddingLeft="10dp"
+        app:labelTextPaddingRight="10dp"
+        app:labelTextPaddingTop="10dp"
+        app:lineMargin="10dp"
+        app:wordMargin="20dp"
+        app:selectType="MULTI"
+        app:maxSelect="5"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/bt_create"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_login_register"
+        android:elevation="0dp"
+        android:outlineProvider="none"
+        android:text="创建个人档案"
+        android:textColor="@color/account_lock_bg"
+        android:textSize="@dimen/font_18"
+        android:translationZ="0dp"
+        tools:targetApi="lollipop" />
+</LinearLayout>

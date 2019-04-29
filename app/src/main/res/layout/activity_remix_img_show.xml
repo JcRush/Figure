@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="10dp"
+        android:text="内容"
+        android:textSize="12sp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/add_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="此时此刻的心情..."
+        android:maxHeight="80dp"
+        android:minLines="5"
+        android:padding="10dp"/>
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--&gt;-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="10dp"
+        android:text="图片"
+        android:textSize="12sp"
+
+        />
+
+    <!-- 拍照上传 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/scren_back"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_photo_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginLeft="95dp"
+            android:src="@mipmap/close_icon"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

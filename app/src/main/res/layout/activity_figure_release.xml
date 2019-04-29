@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gree"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+
+            android:src="@drawable/base_action_bar_back_bg_selector"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发表图片心情"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/okIv"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/backIv"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_chat_send_selector"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="10dp"
+        android:text="内容"
+        android:textSize="12sp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/add_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="此时此刻的心情..."
+        android:maxHeight="80dp"
+        android:minLines="5"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="10dp"
+        android:text="图片"
+        android:textSize="12sp"
+        />
+
+    <!-- 拍照上传 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/scren_back"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_photo_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="95dp"
+            android:src="@mipmap/close_icon"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
